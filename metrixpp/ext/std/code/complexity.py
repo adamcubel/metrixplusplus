@@ -65,7 +65,7 @@ class Plugin(api.Plugin, api.MetricPluginMixin, api.Child, api.IConfigurable):
         
         def __init__(self, *args, **kwargs):
             super(Plugin.MaxIndentCounter, self).__init__(*args, **kwargs)
-            self.current_level = 0
+            self.current_level = 1
             
         def assign(self, match):
             result = self.result
